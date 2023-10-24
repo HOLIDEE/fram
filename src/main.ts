@@ -10,22 +10,46 @@ let currentPopup: any = undefined;
 WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
-		currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au casting Fram by Holidée \r \r La présentation se déroulera en visio principalement sur la terrasse \r \r Un membre de la Team Holidée va venir t'accueillir \r \r Sinon, pour te rendre directement sur la terrasse, clique sur ce bouton :", [{
-			label: "MARCHER VERS LA TERRASSE",
+		currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au casting Fram & nxlvl \r \r La présentation se déroulera en visio principalement sur la terrasse \r \r Un membre de la Team va venir vous accueillir \r \r Sinon, pour vous rendre directement sur la terrasse, cliquez sur le premier bouton, pour une salle de casting individuel, cliquez sur un des boutons suivants :", [{
+			label: "TERRASSE",
 			className: "primary",
 			callback: () => {
 				WA.player.moveTo(1248, 672, 10);
-		}
+				}
+			},{
+			label: "CASTING 1",
+			className: "primary",
+			callback: () => {
+				WA.player.moveTo(1248, 672, 10);
+			}
+			},{
+			label: "CASTING 2",
+			className: "primary",
+			callback: () => {
+				WA.player.moveTo(512, 1344, 10);
+			}
 		}]);
     WA.room.area.onLeave('welcome').subscribe(closePopup);
 
 	WA.room.area.onEnter('welcome').subscribe(() => {
-		currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au casting Fram by Holidée \r \r La présentation se déroulera en visio principalement sur la terrasse \r \r Un membre de la Team Holidée va venir t'accueillir \r \r Sinon, pour te rendre directement sur la terrasse, clique sur ce bouton :", [{
-			label: "MARCHER VERS LA TERRASSE",
+		currentPopup = WA.ui.openPopup("welcomePopup", "Bienvenue au casting Fram & nxlvl \r \r La présentation se déroulera en visio principalement sur la terrasse \r \r Un membre de la Team va venir vous accueillir \r \r Sinon, pour vous rendre directement sur la terrasse, cliquez sur le premier bouton, pour une salle de casting individuel, cliquez sur un des boutons suivants :", [{
+			label: "TERRASSE",
 			className: "primary",
 			callback: () => {
 				WA.player.moveTo(1248, 672, 10);
-		}
+			}
+			},{
+			label: "CASTING 1",
+			className: "primary",
+			callback: () => {
+				WA.player.moveTo(1248, 672, 10);
+			}
+			},{
+			label: "CASTING 2",
+			className: "primary",
+			callback: () => {
+				WA.player.moveTo(512, 1344, 10);
+			}
 		}]);
 	});
 	
