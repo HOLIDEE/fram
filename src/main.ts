@@ -20,7 +20,7 @@ WA.onInit().then(() => {
 			label: "CASTING 1",
 			className: "primary",
 			callback: () => {
-				WA.player.moveTo(1248, 672, 10);
+				WA.player.moveTo(352, 1344, 10);
 			}
 			},{
 			label: "CASTING 2",
@@ -42,7 +42,7 @@ WA.onInit().then(() => {
 			label: "CASTING 1",
 			className: "primary",
 			callback: () => {
-				WA.player.moveTo(1248, 672, 10);
+				WA.player.moveTo(352, 1344, 10);
 			}
 			},{
 			label: "CASTING 2",
