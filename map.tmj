@@ -2873,6 +2873,17 @@
                  "width":193,
                  "x":69,
                  "y":1276
+                }, 
+                {
+                 "height":192,
+                 "id":42,
+                 "name":"castingPopup",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":384,
+                 "x":263,
+                 "y":1084
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -3049,7 +3060,7 @@
          "y":0
         }],
  "nextlayerid":145,
- "nextobjectid":42,
+ "nextobjectid":43,
  "orientation":"orthogonal",
  "properties":[
         {
