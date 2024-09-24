@@ -27,6 +27,21 @@ WA.onInit().then(() => {
 			className: "primary",
 			callback: () => {
 				WA.player.moveTo(512, 1344, 10);
+			},{
+			label: "CASTING 3",
+			className: "primary",
+			callback: () => {
+				WA.player.moveTo(672, 1344, 10);
+			},{
+			label: "CASTING 4",
+			className: "primary",
+			callback: () => {
+				WA.player.moveTo(832, 1344, 10);
+			},{
+			label: "CASTING 5",
+			className: "primary",
+			callback: () => {
+				WA.player.moveTo(992, 1344, 10);
 			}
 		}]);
     WA.room.area.onLeave('welcome').subscribe(closePopup);
