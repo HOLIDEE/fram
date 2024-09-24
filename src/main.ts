@@ -46,8 +46,7 @@ WA.onInit().then(() => {
 			callback: () => {
 				WA.player.moveTo(992, 1344, 10);
 				}
-			}
-]);
+			}]);
     WA.room.area.onLeave('welcome').subscribe(closePopup);
 
 	WA.room.area.onEnter('welcome').subscribe(() => {
