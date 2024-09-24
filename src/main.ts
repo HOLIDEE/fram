@@ -28,7 +28,12 @@ WA.onInit().then(() => {
 			callback: () => {
 				WA.player.moveTo(512, 1344, 10);
 				}
-			},{ label: "<br>", className: "primary", callback: () => {} },{
+			},{
+			label: "<br>",
+			className: "primary",
+			callback: () => {
+				}
+			},{
 			label: "CASTING 3",
 			className: "primary",
 			callback: () => {
